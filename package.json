@@ -1,0 +1,32 @@
+{
+  "name": "personal-study-assistant-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:demo": "VITE_DATA_DIR=demo-data vite",
+    "build": "tsc -b && vite build && node scripts/strip-demo.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "validate": "node scripts/validate-data.mjs public/data && node scripts/validate-data.mjs public/demo-data --demo"
+  },
+  "dependencies": {
+    "fuse.js": "^7.5.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
+  }
+}

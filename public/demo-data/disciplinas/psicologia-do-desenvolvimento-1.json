@@ -1,0 +1,71 @@
+{
+  "id": "psicologia-do-desenvolvimento-1",
+  "nome": "Psicologia do Desenvolvimento I",
+  "sinonimos": [
+    "Psicologia do Desenvolvimento",
+    "Desenvolvimento Humano I"
+  ],
+  "cursos": [
+    "psicologia"
+  ],
+  "semestre_tipico": 2,
+  "origem_topicos": "inferido",
+  "topicos": [
+    {
+      "id": "T1",
+      "rotulo": "Teorias do desenvolvimento"
+    },
+    {
+      "id": "T2",
+      "rotulo": "Primeira infância"
+    }
+  ],
+  "conceitos": [
+    {
+      "nome": "Desenvolvimento como processo contínuo e contextual",
+      "por_que_importa": "Evita leituras deterministas nas disciplinas de avaliação e clínica."
+    }
+  ],
+  "sequencia": [
+    "T1",
+    "T2"
+  ],
+  "leituras": [
+    {
+      "id": "R1",
+      "titulo": "[Demo] Artigo de periódico brasileiro sobre desenvolvimento infantil",
+      "url": "https://example.org/demo/dev-artigo",
+      "tipo": "artigo",
+      "idioma": "pt",
+      "ano": 2019,
+      "acesso_aberto": true,
+      "topicos": [
+        "T2"
+      ],
+      "nota_curadoria": 3,
+      "o_que_ganha": "Resultados de pesquisa com crianças brasileiras."
+    }
+  ],
+  "videos_cursos": [],
+  "pratica": [
+    {
+      "texto": "Observe (com autorização) uma interação cotidiana entre adulto e criança e relacione com uma teoria estudada.",
+      "fonte_ids": [],
+      "rotulo": "sugestao_geral"
+    }
+  ],
+  "lacunas": [
+    "Faltam materiais abertos sobre desenvolvimento em contextos de vulnerabilidade."
+  ],
+  "avisos": [
+    "DEMONSTRAÇÃO: conteúdo ilustrativo para testar o layout. Os links são fictícios (example.org).",
+    "O conteúdo é material de estudo e não substitui orientação docente, supervisão de estágio nem atendimento psicológico."
+  ],
+  "gerado_em": "2026-09-29",
+  "versao_pipeline": "0.0.0",
+  "revisao": {
+    "status": "aprovado",
+    "moderador": "demo",
+    "data": "2026-09-29"
+  }
+}

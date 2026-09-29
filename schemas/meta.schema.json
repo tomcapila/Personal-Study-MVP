@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "meta.schema.json",
+  "title": "Metadados do catálogo",
+  "type": "object",
+  "required": ["versao_catalogo", "gerado_em", "versao_pipeline", "contagens"],
+  "additionalProperties": false,
+  "properties": {
+    "versao_catalogo": { "type": "string" },
+    "gerado_em": { "$ref": "defs.schema.json#/$defs/data" },
+    "versao_pipeline": { "type": "string" },
+    "observacao": { "type": "string" },
+    "contagens": {
+      "type": "object",
+      "required": ["disciplinas_no_indice", "trilhas_publicadas", "carreiras_publicadas"],
+      "additionalProperties": false,
+      "properties": {
+        "disciplinas_no_indice": { "type": "integer", "minimum": 0 },
+        "trilhas_publicadas": { "type": "integer", "minimum": 0 },
+        "carreiras_publicadas": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

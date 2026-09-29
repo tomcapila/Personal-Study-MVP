@@ -1,0 +1,31 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Schema e regras dos dados
+        run: npm run validate
+      - name: Testes
+        run: npm test
+      - name: Build
+        run: npm run build
+      - name: Nenhum segredo no build
+        run: |
+          if grep -rEn 'sk-ant-|tvly-|AIza[0-9A-Za-z_-]{20,}' dist public src; then
+            echo "Possível chave de API encontrada." && exit 1
+          fi

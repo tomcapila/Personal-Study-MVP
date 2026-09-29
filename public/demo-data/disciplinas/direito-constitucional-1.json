@@ -1,0 +1,68 @@
+{
+  "id": "direito-constitucional-1",
+  "nome": "Direito Constitucional I",
+  "sinonimos": [
+    "Teoria da Constituição",
+    "Direito Constitucional: Teoria Geral"
+  ],
+  "cursos": [
+    "direito"
+  ],
+  "semestre_tipico": 2,
+  "origem_topicos": "inferido",
+  "topicos": [
+    {
+      "id": "T1",
+      "rotulo": "Poder constituinte"
+    },
+    {
+      "id": "T2",
+      "rotulo": "Controle de constitucionalidade"
+    }
+  ],
+  "conceitos": [
+    {
+      "nome": "Supremacia da Constituição",
+      "por_que_importa": "Base para entender o controle de constitucionalidade."
+    }
+  ],
+  "sequencia": [
+    "T1",
+    "T2"
+  ],
+  "leituras": [
+    {
+      "id": "R1",
+      "titulo": "[Demo] Texto da Constituição na fonte oficial",
+      "url": "https://example.org/demo/constituicao",
+      "tipo": "legislacao",
+      "idioma": "pt",
+      "acesso_aberto": true,
+      "topicos": [
+        "T1"
+      ],
+      "nota_curadoria": 3,
+      "o_que_ganha": "Leitura direta dos artigos estudados."
+    }
+  ],
+  "videos_cursos": [],
+  "pratica": [
+    {
+      "texto": "Leia a ementa de uma decisão do STF sobre controle concentrado e identifique o parâmetro de controle.",
+      "fonte_ids": [],
+      "rotulo": "sugestao_geral"
+    }
+  ],
+  "lacunas": [],
+  "avisos": [
+    "DEMONSTRAÇÃO: conteúdo ilustrativo para testar o layout. Os links são fictícios (example.org).",
+    "Confira sempre a redação vigente da legislação citada."
+  ],
+  "gerado_em": "2026-09-29",
+  "versao_pipeline": "0.0.0",
+  "revisao": {
+    "status": "aprovado",
+    "moderador": "demo",
+    "data": "2026-09-29"
+  }
+}

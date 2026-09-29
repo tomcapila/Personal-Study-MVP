@@ -1,0 +1,48 @@
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/validate-data.mjs public/data
+      - run: npm run build
+        env:
+          # Variáveis do repositório (Settings > Secrets and variables > Actions > Variables).
+          # São links públicos de formulário, não segredos.
+          VITE_FORM_FEEDBACK_URL: ${{ vars.FORM_FEEDBACK_URL }}
+          VITE_FORM_EMENTA_URL: ${{ vars.FORM_EMENTA_URL }}
+          VITE_CONTATO: ${{ vars.CONTATO }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

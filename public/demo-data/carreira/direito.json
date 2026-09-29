@@ -1,0 +1,49 @@
+{
+  "curso": "direito",
+  "resumo": "Visão geral dos caminhos mais comuns depois da graduação em Direito.",
+  "secoes": [
+    {
+      "titulo": "Exame de Ordem",
+      "itens": [
+        {
+          "texto": "A aprovação no Exame de Ordem é exigida para a inscrição como advogado.",
+          "fonte_ids": [
+            "R1"
+          ],
+          "rotulo": "com_fonte"
+        }
+      ]
+    },
+    {
+      "titulo": "Outros caminhos",
+      "itens": [
+        {
+          "texto": "Concursos públicos, advocacia pública e pesquisa acadêmica são alternativas frequentes.",
+          "fonte_ids": [],
+          "rotulo": "sugestao_geral"
+        }
+      ]
+    }
+  ],
+  "recursos": [
+    {
+      "id": "R1",
+      "titulo": "[Demo] Página oficial do Exame de Ordem",
+      "url": "https://example.org/demo/exame-de-ordem",
+      "tipo": "site",
+      "idioma": "pt",
+      "nota_curadoria": 3,
+      "o_que_ganha": "Edital e calendário."
+    }
+  ],
+  "avisos": [
+    "DEMONSTRAÇÃO: conteúdo ilustrativo para testar o layout. Os links são fictícios (example.org)."
+  ],
+  "gerado_em": "2026-09-29",
+  "versao_pipeline": "0.0.0",
+  "revisao": {
+    "status": "aprovado",
+    "moderador": "demo",
+    "data": "2026-09-29"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "defs.schema.json",
+  "title": "Definições compartilhadas",
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "curso_id": { "type": "string", "enum": ["administracao", "direito", "psicologia"] },
+    "data": { "type": "string", "format": "date" },
+    "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "idioma": { "type": "string", "enum": ["pt", "en", "es"] },
+    "recurso": {
+      "type": "object",
+      "required": ["id", "titulo", "url", "tipo", "idioma", "nota_curadoria", "o_que_ganha"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^R[0-9]+$" },
+        "titulo": { "type": "string", "minLength": 3 },
+        "url": { "$ref": "#/$defs/url" },
+        "tipo": { "type": "string", "enum": ["artigo", "livro", "capitulo", "legislacao", "jurisprudencia", "video", "curso", "podcast", "site", "documento"] },
+        "idioma": { "$ref": "#/$defs/idioma" },
+        "autores": { "type": "array", "items": { "type": "string" } },
+        "ano": { "type": "integer", "minimum": 1800, "maximum": 2100 },
+        "doi": { "type": "string", "pattern": "^10\\.[0-9]{4,9}/\\S+$" },
+        "acesso_aberto": { "type": "boolean" },
+        "duracao_min": { "type": "integer", "minimum": 1 },
+        "topicos": { "type": "array", "items": { "type": "string", "pattern": "^T[0-9]+$" } },
+        "nota_curadoria": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "o_que_ganha": { "type": "string", "minLength": 3 }
+      }
+    },
+    "revisao": {
+      "type": "object",
+      "required": ["status", "moderador", "data"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "type": "string", "enum": ["aprovado"] },
+        "moderador": { "type": "string", "minLength": 1 },
+        "data": { "$ref": "#/$defs/data" }
+      }
+    }
+  }
+}

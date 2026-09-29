@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "carreira.schema.json",
+  "title": "Página de carreira de um curso",
+  "type": "object",
+  "required": ["curso", "resumo", "secoes", "recursos", "avisos", "revisao", "gerado_em", "versao_pipeline"],
+  "additionalProperties": false,
+  "properties": {
+    "curso": { "$ref": "defs.schema.json#/$defs/curso_id" },
+    "resumo": { "type": "string" },
+    "secoes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["titulo", "itens"],
+        "additionalProperties": false,
+        "properties": {
+          "titulo": { "type": "string" },
+          "itens": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["texto", "fonte_ids", "rotulo"],
+              "additionalProperties": false,
+              "properties": {
+                "texto": { "type": "string" },
+                "fonte_ids": { "type": "array", "items": { "type": "string", "pattern": "^R[0-9]+$" } },
+                "rotulo": { "type": "string", "enum": ["com_fonte", "sugestao_geral"] }
+              },
+              "if": { "properties": { "fonte_ids": { "maxItems": 0 } } },
+              "then": { "properties": { "rotulo": { "const": "sugestao_geral" } } },
+              "else": { "properties": { "rotulo": { "const": "com_fonte" } } }
+            }
+          }
+        }
+      }
+    },
+    "recursos": { "type": "array", "items": { "$ref": "defs.schema.json#/$defs/recurso" } },
+    "avisos": { "type": "array", "items": { "type": "string" } },
+    "revisao": { "$ref": "defs.schema.json#/$defs/revisao" },
+    "gerado_em": { "$ref": "defs.schema.json#/$defs/data" },
+    "versao_pipeline": { "type": "string" }
+  }
+}

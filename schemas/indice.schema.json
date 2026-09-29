@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "indice.schema.json",
+  "title": "Índice de disciplinas (alimenta a busca do Fuse.js)",
+  "type": "object",
+  "required": ["disciplinas"],
+  "additionalProperties": false,
+  "properties": {
+    "disciplinas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "nome", "sinonimos", "cursos", "semestre_tipico", "disponivel"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "defs.schema.json#/$defs/slug" },
+          "nome": { "type": "string" },
+          "sinonimos": { "type": "array", "items": { "type": "string" } },
+          "cursos": { "type": "array", "items": { "$ref": "defs.schema.json#/$defs/curso_id" }, "minItems": 1 },
+          "semestre_tipico": { "type": "integer", "minimum": 1, "maximum": 12 },
+          "disponivel": { "type": "boolean", "description": "true quando existe disciplinas/{id}.json aprovado" },
+          "revisado_em": { "$ref": "defs.schema.json#/$defs/data" }
+        }
+      }
+    }
+  }
+}

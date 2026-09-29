@@ -1,0 +1,86 @@
+{
+  "cursos": [
+    {
+      "id": "administracao",
+      "nome": "Administração",
+      "descricao": "Organizações, finanças, marketing, pessoas e operações.",
+      "avisos": [],
+      "carreira_disponivel": false,
+      "semestres": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "teoria-geral-da-administracao"
+          ]
+        },
+        {
+          "semestre": 3,
+          "disciplinas": [
+            "matematica-financeira"
+          ]
+        },
+        {
+          "semestre": 4,
+          "disciplinas": [
+            "gestao-de-pessoas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "direito",
+      "nome": "Direito",
+      "descricao": "Teoria do direito, direito público e privado, prática jurídica.",
+      "avisos": [
+        "Confira sempre a redação vigente das leis citadas.",
+        "O conteúdo é material de estudo e não é consultoria jurídica para casos concretos."
+      ],
+      "carreira_disponivel": true,
+      "semestres": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "introducao-ao-estudo-do-direito"
+          ]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": [
+            "direito-constitucional-1",
+            "direito-civil-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psicologia",
+      "nome": "Psicologia",
+      "descricao": "Processos psicológicos, desenvolvimento, psicopatologia e áreas de atuação.",
+      "avisos": [
+        "O conteúdo é material de estudo e não substitui orientação docente, supervisão de estágio nem atendimento psicológico.",
+        "Se você estiver passando por um momento difícil, o CVV atende gratuitamente pelo telefone 188."
+      ],
+      "carreira_disponivel": false,
+      "semestres": [
+        {
+          "semestre": 1,
+          "disciplinas": [
+            "historia-da-psicologia"
+          ]
+        },
+        {
+          "semestre": 2,
+          "disciplinas": [
+            "psicologia-do-desenvolvimento-1"
+          ]
+        },
+        {
+          "semestre": 5,
+          "disciplinas": [
+            "psicopatologia-1"
+          ]
+        }
+      ]
+    }
+  ]
+}

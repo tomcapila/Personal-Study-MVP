@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "disciplina.schema.json",
+  "title": "Trilha de uma disciplina",
+  "description": "Arquivo public/data/disciplinas/{id}.json. Só entra no site com revisao.status = aprovado. Regras que o JSON Schema não expressa (IDs de sequencia e fonte_ids existentes) ficam em scripts/validate-data.mjs.",
+  "type": "object",
+  "required": ["id", "nome", "sinonimos", "cursos", "semestre_tipico", "origem_topicos", "topicos", "conceitos", "sequencia", "leituras", "videos_cursos", "pratica", "lacunas", "avisos", "revisao", "gerado_em", "versao_pipeline"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "defs.schema.json#/$defs/slug" },
+    "nome": { "type": "string", "minLength": 3 },
+    "sinonimos": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "cursos": { "type": "array", "items": { "$ref": "defs.schema.json#/$defs/curso_id" }, "minItems": 1, "uniqueItems": true },
+    "semestre_tipico": { "type": "integer", "minimum": 1, "maximum": 12 },
+    "origem_topicos": { "type": "string", "enum": ["ementa", "ppc", "inferido"] },
+    "topicos": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "rotulo"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^T[0-9]+$" },
+          "rotulo": { "type": "string", "minLength": 2 }
+        }
+      }
+    },
+    "conceitos": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["nome", "por_que_importa"],
+        "additionalProperties": false,
+        "properties": {
+          "nome": { "type": "string" },
+          "por_que_importa": { "type": "string" }
+        }
+      }
+    },
+    "sequencia": { "type": "array", "items": { "type": "string", "pattern": "^T[0-9]+$" }, "minItems": 1 },
+    "leituras": { "type": "array", "items": { "$ref": "defs.schema.json#/$defs/recurso" } },
+    "videos_cursos": { "type": "array", "items": { "$ref": "defs.schema.json#/$defs/recurso" } },
+    "pratica": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["texto", "fonte_ids", "rotulo"],
+        "additionalProperties": false,
+        "properties": {
+          "texto": { "type": "string" },
+          "fonte_ids": { "type": "array", "items": { "type": "string", "pattern": "^R[0-9]+$" } },
+          "rotulo": { "type": "string", "enum": ["com_fonte", "sugestao_geral"] }
+        },
+        "if": { "properties": { "fonte_ids": { "maxItems": 0 } } },
+        "then": { "properties": { "rotulo": { "const": "sugestao_geral" } } },
+        "else": { "properties": { "rotulo": { "const": "com_fonte" } } }
+      }
+    },
+    "lacunas": { "type": "array", "items": { "type": "string" } },
+    "avisos": { "type": "array", "items": { "type": "string" } },
+    "revisao": { "$ref": "defs.schema.json#/$defs/revisao" },
+    "gerado_em": { "$ref": "defs.schema.json#/$defs/data" },
+    "versao_pipeline": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+  }
+}

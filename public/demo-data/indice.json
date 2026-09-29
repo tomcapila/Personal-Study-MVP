@@ -1,0 +1,127 @@
+{
+  "disciplinas": [
+    {
+      "id": "teoria-geral-da-administracao",
+      "nome": "Teoria Geral da Administração",
+      "sinonimos": [
+        "TGA",
+        "Introdução à Administração",
+        "Fundamentos da Administração"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": true,
+      "revisado_em": "2026-09-29"
+    },
+    {
+      "id": "matematica-financeira",
+      "nome": "Matemática Financeira",
+      "sinonimos": [
+        "Matemática Financeira Aplicada",
+        "Cálculo Financeiro"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "gestao-de-pessoas",
+      "nome": "Gestão de Pessoas",
+      "sinonimos": [
+        "Administração de Recursos Humanos",
+        "Gestão de Recursos Humanos",
+        "Gestão de Pessoas I"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "introducao-ao-estudo-do-direito",
+      "nome": "Introdução ao Estudo do Direito",
+      "sinonimos": [
+        "IED",
+        "Introdução ao Direito",
+        "Introdução ao Estudo do Direito I"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "direito-constitucional-1",
+      "nome": "Direito Constitucional I",
+      "sinonimos": [
+        "Teoria da Constituição",
+        "Direito Constitucional: Teoria Geral"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": true,
+      "revisado_em": "2026-09-29"
+    },
+    {
+      "id": "direito-civil-1",
+      "nome": "Direito Civil I",
+      "sinonimos": [
+        "Direito Civil: Parte Geral",
+        "Teoria Geral do Direito Civil"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "historia-da-psicologia",
+      "nome": "História da Psicologia",
+      "sinonimos": [
+        "História e Sistemas em Psicologia",
+        "Fundamentos Históricos da Psicologia"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "psicologia-do-desenvolvimento-1",
+      "nome": "Psicologia do Desenvolvimento I",
+      "sinonimos": [
+        "Psicologia do Desenvolvimento",
+        "Desenvolvimento Humano I"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": true,
+      "revisado_em": "2026-09-29"
+    },
+    {
+      "id": "psicopatologia-1",
+      "nome": "Psicopatologia I",
+      "sinonimos": [
+        "Psicopatologia",
+        "Psicopatologia Geral"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    }
+  ]
+}

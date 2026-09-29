@@ -1,0 +1,11 @@
+{
+  "versao_catalogo": "demo",
+  "gerado_em": "2026-09-29",
+  "versao_pipeline": "0.0.0",
+  "observacao": "Dados de DEMONSTRAÇÃO para desenvolvimento do layout. Não são publicados no site.",
+  "contagens": {
+    "disciplinas_no_indice": 9,
+    "trilhas_publicadas": 3,
+    "carreiras_publicadas": 1
+  }
+}

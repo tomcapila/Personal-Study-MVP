@@ -1,0 +1,38 @@
+name: links
+
+on:
+  pull_request:
+    paths: ['public/data/**']
+  schedule:
+    - cron: '17 9 1 * *' # dia 1 de cada mês
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Checar links dos dados
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-retries 3
+            --accept '200..=299,429'
+            --exclude 'example\.org'
+            'public/data/**/*.json'
+          output: lychee/out.md
+          # Em PR, link quebrado bloqueia o merge. Na checagem mensal vira issue.
+          fail: ${{ github.event_name == 'pull_request' }}
+      - name: Abrir issue para o moderador
+        if: github.event_name != 'pull_request' && steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Links quebrados na checagem mensal
+          content-filepath: lychee/out.md
+          labels: links-quebrados

@@ -1,0 +1,102 @@
+{
+  "id": "teoria-geral-da-administracao",
+  "nome": "Teoria Geral da Administração",
+  "sinonimos": [
+    "TGA",
+    "Introdução à Administração",
+    "Fundamentos da Administração"
+  ],
+  "cursos": [
+    "administracao"
+  ],
+  "semestre_tipico": 1,
+  "origem_topicos": "inferido",
+  "topicos": [
+    {
+      "id": "T1",
+      "rotulo": "Abordagem clássica"
+    },
+    {
+      "id": "T2",
+      "rotulo": "Abordagem humanística"
+    },
+    {
+      "id": "T3",
+      "rotulo": "Abordagem sistêmica e contingencial"
+    }
+  ],
+  "conceitos": [
+    {
+      "nome": "Funções administrativas",
+      "por_que_importa": "Planejar, organizar, dirigir e controlar aparecem em quase todas as disciplinas seguintes."
+    },
+    {
+      "nome": "Organização como sistema aberto",
+      "por_que_importa": "Ajuda a ler a relação entre empresa e ambiente em estratégia e marketing."
+    }
+  ],
+  "sequencia": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "leituras": [
+    {
+      "id": "R1",
+      "titulo": "[Demo] Artigo de revisão sobre escolas da administração",
+      "url": "https://example.org/demo/tga-artigo",
+      "tipo": "artigo",
+      "idioma": "pt",
+      "ano": 2020,
+      "acesso_aberto": true,
+      "topicos": [
+        "T1",
+        "T2"
+      ],
+      "nota_curadoria": 3,
+      "o_que_ganha": "Panorama das escolas clássica e humanística."
+    }
+  ],
+  "videos_cursos": [
+    {
+      "id": "R2",
+      "titulo": "[Demo] Aula introdutória em inglês",
+      "url": "https://example.org/demo/tga-video",
+      "tipo": "video",
+      "idioma": "en",
+      "duracao_min": 35,
+      "topicos": [
+        "T3"
+      ],
+      "nota_curadoria": 2,
+      "o_que_ganha": "Exemplos de teoria da contingência."
+    }
+  ],
+  "pratica": [
+    {
+      "texto": "Compare o organograma de duas organizações conhecidas e identifique traços de cada abordagem.",
+      "fonte_ids": [],
+      "rotulo": "sugestao_geral"
+    },
+    {
+      "texto": "Use o artigo R1 como roteiro para um resumo em tabela das escolas.",
+      "fonte_ids": [
+        "R1"
+      ],
+      "rotulo": "com_fonte"
+    }
+  ],
+  "lacunas": [
+    "Poucos materiais gratuitos em português sobre a abordagem contingencial."
+  ],
+  "avisos": [
+    "DEMONSTRAÇÃO: conteúdo ilustrativo para testar o layout. Os links são fictícios (example.org)."
+  ],
+  "gerado_em": "2026-09-29",
+  "versao_pipeline": "0.0.0",
+  "revisao": {
+    "status": "aprovado",
+    "moderador": "demo",
+    "data": "2026-09-29"
+  }
+}
