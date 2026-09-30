@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { criarBuscador, normalizar, separarLinhas } from './match'
 import type { ItemIndice } from './types'
+import catalogo from '../../public/data/indice.json'
 
 const indice: ItemIndice[] = [
   { id: 'direito-constitucional-1', nome: 'Direito Constitucional I', sinonimos: ['Teoria da Constituição'], cursos: ['direito'], semestre_tipico: 2, disponivel: true },
@@ -14,6 +15,17 @@ describe('normalizar', () => {
     expect(normalizar('DIR201 - Direito Constitucional I (60h)')).toBe('direito constitucional 1')
     expect(normalizar('Teoria Geral da Administração')).toBe('teoria geral da administracao')
     expect(normalizar('Psicopatologia II 80 horas')).toBe('psicopatologia 2')
+  })
+
+  it('entende linhas copiadas dos portais das faculdades', () => {
+    // Júpiter (USP): código sem separador e créditos no fim
+    expect(normalizar('DCV0115 Teoria Geral do Direito Privado I 4 0 60')).toBe('teoria geral do direito privado 1')
+    // UFRGS: caráter e carga horária no fim
+    expect(normalizar('DIR02019 DIREITO DAS OBRIGAÇÕES Obrigatória 4 60 0')).toBe('direito das obrigacoes')
+    // UFMG: prefixo do órgão antes do código
+    expect(normalizar('DIG - CAD152 - TEORIA DA ADMINISTRACAO I')).toBe('teoria da administracao 1')
+    // um número só no fim continua sendo parte do nome
+    expect(normalizar('Direito Penal 2')).toBe('direito penal 2')
   })
 })
 
@@ -39,5 +51,25 @@ describe('criarBuscador', () => {
   it('não inventa correspondência', () => {
     expect(buscar('Cálculo Diferencial e Integral III').item).toBeNull()
     expect(buscar('Neuroanatomia').item).toBeNull()
+  })
+})
+
+describe('catálogo publicado', () => {
+  const buscar = criarBuscador((catalogo as { disciplinas: ItemIndice[] }).disciplinas)
+  it.each([
+    ['DES0118 Direito Constitucional I 3 0 45', 'direito-constitucional-1'],
+    ['Direito Civil V – Reais', 'direitos-reais'],
+    ['DIR01201 CRIMES EM ESPÉCIE', 'direito-penal-parte-especial'],
+    ['PSI01052 DESENVOLVIMENTO HUMANO I - A', 'psicologia-do-desenvolvimento-1'],
+    ['Técnicas de Exame Psicológico II', 'avaliacao-psicologica-2'],
+    ['Administração de Recursos Humanos', 'gestao-de-pessoas'],
+  ])('%s', (linha, id) => {
+    expect(buscar(linha).item?.id).toBe(id)
+  })
+
+  it('não repete id nem nome entre disciplinas', () => {
+    const itens = (catalogo as { disciplinas: ItemIndice[] }).disciplinas
+    expect(new Set(itens.map((d) => d.id)).size).toBe(itens.length)
+    expect(new Set(itens.map((d) => normalizar(d.nome))).size).toBe(itens.length)
   })
 })

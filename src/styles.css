@@ -71,11 +71,17 @@ main.container { min-height: 70vh; padding-bottom: 3rem; }
 .selo.destaque { background: var(--destaque); color: var(--texto); }
 .selos .selo:first-child { margin-left: 0; }
 
-.lista-disciplinas { padding-left: 1.1rem; }
+.lista-disciplinas { padding-left: 1.1rem; margin: .4rem 0 0; }
 .lista-disciplinas li { margin: .3rem 0; }
+.lista-disciplinas li.em-preparacao::marker { color: var(--borda); }
+.semestres { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); margin: 1rem 0 1.5rem; }
+.semestre { background: var(--superficie); border: 1px solid var(--borda); border-radius: 10px; padding: .8rem 1rem; }
+.semestre h2 { font-size: 1rem; margin: 0; }
+.filtro { max-width: 26rem; }
+.cartao .contagem { margin-top: auto; padding-top: .4rem; font-size: .85rem; }
 
 .campo { display: block; margin: 1rem 0; font-weight: 600; }
-.campo select, .campo textarea { display: block; width: 100%; margin-top: .3rem; font: inherit; font-weight: 400; padding: .5rem; border: 1px solid var(--borda); border-radius: 8px; background: var(--superficie); color: var(--texto); }
+.campo select, .campo textarea, .campo input { display: block; width: 100%; margin-top: .3rem; font: inherit; font-weight: 400; padding: .5rem; border: 1px solid var(--borda); border-radius: 8px; background: var(--superficie); color: var(--texto); }
 
 .correspondencias { list-style: none; padding: 0; }
 .correspondencias li { padding: .4rem 0; border-bottom: 1px solid var(--borda); }

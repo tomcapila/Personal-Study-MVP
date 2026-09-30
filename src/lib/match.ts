@@ -10,7 +10,9 @@ export function normalizar(nome: string): string {
     .replace(/[̀-ͯ]/g, '')
     .toLowerCase()
     .replace(/\([^)]*\)/g, ' ') // "(60h)", "(obrigatória)"
-    .replace(/^\s*[a-z]{2,5}[-\s]?\d{2,5}\s*[-–:]\s*/, '') // código no início: "ADM101 - "
+    .replace(/^\s*(?:[a-z]{2,4}\s*-\s*)?[a-z]{2,5}[-\s]?\d{2,5}\s*[-–:]?\s*/, '') // código: "ADM101 - ", "DCV0115 ", "DIG - CAD152 - "
+    .replace(/\s+(obrigatoria|optativa|eletiva)\b.*$/, '') // "Obrigatória 4 60 0"
+    .replace(/(\s+\d+){2,}\s*$/, '') // créditos e carga horária no fim: "4 0 60"
     .replace(/\b\d+\s*h(oras)?\b/g, ' ') // carga horária solta
     .replace(/[^a-z0-9]+/g, ' ')
     .split(' ')

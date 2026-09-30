@@ -4,9 +4,14 @@
       "id": "teoria-geral-da-administracao",
       "nome": "Teoria Geral da Administração",
       "sinonimos": [
+        "Teoria das Organizações",
+        "Gestão Empresarial",
+        "Teorias Organizacionais I",
+        "Teorias Organizacionais II",
+        "Teoria da Administração I",
+        "Teoria da Administração II",
         "TGA",
-        "Introdução à Administração",
-        "Fundamentos da Administração"
+        "Introdução à Administração"
       ],
       "cursos": [
         "administracao"
@@ -15,11 +20,167 @@
       "disponivel": false
     },
     {
-      "id": "matematica-financeira",
-      "nome": "Matemática Financeira",
+      "id": "matematica-aplicada-a-administracao",
+      "nome": "Matemática Aplicada à Administração",
       "sinonimos": [
-        "Matemática Financeira Aplicada",
-        "Cálculo Financeiro"
+        "Álgebra Linear e Geometria Analítica",
+        "Matemática A"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "instituicoes-de-direito-publico-e-privado",
+      "nome": "Instituições de Direito Público e Privado",
+      "sinonimos": [
+        "Instituições de Direito",
+        "Instituições de Direito Público e Legislação Tributária",
+        "Instituições de Direito Privado e Legislação Comercial",
+        "Instituições de Direito Público A",
+        "Instituições de Direito Privado",
+        "Direito Empresarial",
+        "Legislação Empresarial"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "filosofia",
+      "nome": "Filosofia",
+      "sinonimos": [
+        "Filosofia e Ética na Administração",
+        "Introdução à Filosofia: Filosofia da Ciência e Epistemologia"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "comunicacao-e-producao-de-textos",
+      "nome": "Comunicação e Produção de Textos",
+      "sinonimos": [
+        "Comunicação e Trabalho em Grupo",
+        "Produção de Textos",
+        "Comunicação Empresarial",
+        "Português Instrumental"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "estatistica",
+      "nome": "Estatística",
+      "sinonimos": [
+        "Introdução à Estatística para Administração",
+        "Estatística Aplicada à Administração",
+        "Estatística Geral I",
+        "Introdução à Estatística",
+        "Métodos Quantitativos em Administração I",
+        "Métodos Quantitativos em Administração II",
+        "Estatística Aplicada",
+        "Métodos Quantitativos"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "contabilidade-geral",
+      "nome": "Contabilidade Geral",
+      "sinonimos": [
+        "Contabilidade Empresarial",
+        "Contabilidade e Análise das Demonstrações Contábeis",
+        "Introdução à Contabilidade",
+        "Contabilidade Introdutória",
+        "Contabilidade I"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "microeconomia",
+      "nome": "Microeconomia",
+      "sinonimos": [
+        "Análise Microeconômica I",
+        "Análise Microeconômica II",
+        "Microeconomia A-I",
+        "Introdução à Economia",
+        "Economia I"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "macroeconomia",
+      "nome": "Macroeconomia",
+      "sinonimos": [
+        "Teoria Econômica: Macroeconomia",
+        "Macroeconomia I",
+        "Economia II"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "etica-empresarial",
+      "nome": "Ética Empresarial",
+      "sinonimos": [
+        "Ética e Política",
+        "Filosofia e Ética na Administração",
+        "Ética no Contexto do Administrador",
+        "Ética nas Organizações",
+        "Ética Profissional"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "sociologia-das-organizacoes",
+      "nome": "Sociologia das Organizações",
+      "sinonimos": [
+        "Sociologia Aplicada à Administração",
+        "Fundamentos de Análise Sociológica",
+        "Sociologia",
+        "Sociologia Organizacional"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "contabilidade-de-custos",
+      "nome": "Contabilidade de Custos",
+      "sinonimos": [
+        "Metodologia Básica de Custos",
+        "Gestão de Custos",
+        "Custos"
       ],
       "cursos": [
         "administracao"
@@ -28,12 +189,57 @@
       "disponivel": false
     },
     {
-      "id": "gestao-de-pessoas",
-      "nome": "Gestão de Pessoas",
+      "id": "economia-brasileira",
+      "nome": "Economia Brasileira",
       "sinonimos": [
-        "Administração de Recursos Humanos",
-        "Gestão de Recursos Humanos",
-        "Gestão de Pessoas I"
+        "Introdução à Economia Brasileira",
+        "Economia Brasileira Contemporânea"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "comportamento-organizacional",
+      "nome": "Comportamento Organizacional",
+      "sinonimos": [
+        "Psicologia Aplicada à Administração",
+        "Comportamento Humano nas Organizações",
+        "Psicologia Organizacional"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "administracao-estrategica",
+      "nome": "Administração Estratégica",
+      "sinonimos": [
+        "Planejamento e Administração Estratégica",
+        "Estratégias Organizacionais",
+        "Estratégia I",
+        "Estratégia II",
+        "Planejamento Estratégico",
+        "Estratégia Empresarial"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "matematica-financeira",
+      "nome": "Matemática Financeira",
+      "sinonimos": [
+        "Matemática Financeira - EAD",
+        "Investimento e Cálculo Financeiro",
+        "Cálculo Financeiro",
+        "Matemática Financeira Aplicada"
       ],
       "cursos": [
         "administracao"
@@ -42,12 +248,282 @@
       "disponivel": false
     },
     {
+      "id": "gestao-de-pessoas",
+      "nome": "Gestão de Pessoas",
+      "sinonimos": [
+        "Administração de Recursos Humanos",
+        "Gestão de Recursos Humanos",
+        "Recursos Humanos"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "fundamentos-de-marketing",
+      "nome": "Fundamentos de Marketing",
+      "sinonimos": [
+        "Marketing I",
+        "Introdução ao Marketing",
+        "Administração de Marketing",
+        "Marketing"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "administracao-da-producao-e-operacoes",
+      "nome": "Administração da Produção e Operações",
+      "sinonimos": [
+        "Administração de Operações I",
+        "Organização da Produção",
+        "Fundamentos de Gestão de Operações",
+        "Administração da Produção",
+        "Gestão de Operações"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "pesquisa-operacional",
+      "nome": "Pesquisa Operacional",
+      "sinonimos": [
+        "Pesquisa Operacional I",
+        "Pesquisa Operacional II",
+        "Pesquisa Operacional em Administração"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "administracao-publica",
+      "nome": "Administração Pública",
+      "sinonimos": [
+        "Oficina II: Administração e Governo do Brasil",
+        "Gestão Pública"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "metodologia-de-pesquisa-em-administracao",
+      "nome": "Metodologia de Pesquisa em Administração",
+      "sinonimos": [
+        "Técnicas de Pesquisa I",
+        "Metodologia Científica",
+        "Métodos de Pesquisa"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "marketing-estrategico",
+      "nome": "Marketing Estratégico",
+      "sinonimos": [
+        "Marketing II",
+        "Administração de Marketing"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "legislacao-trabalhista",
+      "nome": "Legislação Trabalhista",
+      "sinonimos": [
+        "Direito do Trabalho",
+        "Introdução ao Direito do Trabalho",
+        "Instituições de Direito do Trabalho"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "administracao-financeira-1",
+      "nome": "Administração Financeira I",
+      "sinonimos": [
+        "Finanças Corporativas I",
+        "Gestão Financeira"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "relacoes-de-trabalho",
+      "nome": "Relações de Trabalho",
+      "sinonimos": [
+        "Relações do Trabalho e Negociação"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "planejamento-e-controle-da-producao",
+      "nome": "Planejamento e Controle da Produção",
+      "sinonimos": [
+        "Planejamento e Gestão da Produção e Operações",
+        "PCP"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "logistica",
+      "nome": "Logística e Cadeia de Suprimentos",
+      "sinonimos": [
+        "Administração de Logística e da Cadeia de Suprimentos",
+        "Logística e Redes de Suprimentos",
+        "Logística Empresarial",
+        "Gestão da Cadeia de Suprimentos"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "sistemas-de-informacao",
+      "nome": "Sistemas de Informação Gerenciais",
+      "sinonimos": [
+        "Desenvolvimento de Sistemas de Informação",
+        "Sistemas Integrados e de Apoio a Decisão",
+        "Sistemas de Informações Gerenciais",
+        "SIG",
+        "Sistemas de Informação"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "administracao-financeira-2",
+      "nome": "Administração Financeira II",
+      "sinonimos": [
+        "Finanças Corporativas II"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 7,
+      "disponivel": false
+    },
+    {
+      "id": "pesquisa-de-marketing",
+      "nome": "Pesquisa de Marketing",
+      "sinonimos": [],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 7,
+      "disponivel": false
+    },
+    {
+      "id": "gestao-de-projetos",
+      "nome": "Gestão de Projetos",
+      "sinonimos": [
+        "Elaboração de Projetos",
+        "Administração de Projetos"
+      ],
+      "cursos": [
+        "administracao"
+      ],
+      "semestre_tipico": 7,
+      "disponivel": false
+    },
+    {
       "id": "introducao-ao-estudo-do-direito",
       "nome": "Introdução ao Estudo do Direito",
       "sinonimos": [
+        "Introdução ao Estudo do Direito I",
+        "Introdução ao Estudo do Direito II",
+        "Introdução à Ciência do Direito I",
+        "Introdução à Ciência do Direito",
+        "Teoria Geral do Direito",
         "IED",
-        "Introdução ao Direito",
-        "Introdução ao Estudo do Direito I"
+        "IED I",
+        "IED II"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "teoria-geral-do-estado",
+      "nome": "Teoria Geral do Estado",
+      "sinonimos": [
+        "Teoria Geral do Estado I",
+        "Teoria Geral do Estado II",
+        "Política e Teoria do Estado I",
+        "Política e Teoria do Estado II",
+        "Teoria do Estado I",
+        "Teoria do Estado II",
+        "TGE",
+        "Ciência Política"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "direito-civil-parte-geral",
+      "nome": "Direito Civil – Parte Geral",
+      "sinonimos": [
+        "Teoria Geral do Direito Privado I",
+        "Teoria Geral do Direito Privado II",
+        "Parte Geral do Direito Civil",
+        "TGDP",
+        "Direito Civil I (Parte Geral)"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "economia-politica",
+      "nome": "Economia Política",
+      "sinonimos": [
+        "Economia Política - A",
+        "Economia"
       ],
       "cursos": [
         "direito"
@@ -59,8 +535,8 @@
       "id": "direito-constitucional-1",
       "nome": "Direito Constitucional I",
       "sinonimos": [
-        "Teoria da Constituição",
-        "Direito Constitucional: Teoria Geral"
+        "Direito Constitucional I - A",
+        "Teoria da Constituição"
       ],
       "cursos": [
         "direito"
@@ -69,24 +545,531 @@
       "disponivel": false
     },
     {
-      "id": "direito-civil-1",
-      "nome": "Direito Civil I",
+      "id": "direito-romano",
+      "nome": "Direito Romano",
       "sinonimos": [
-        "Direito Civil: Parte Geral",
-        "Teoria Geral do Direito Civil"
+        "Direito Romano I",
+        "Direito Romano II",
+        "Direito Romano - A",
+        "Instituições de Direito Romano"
       ],
       "cursos": [
         "direito"
       ],
       "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "historia-do-direito",
+      "nome": "História do Direito",
+      "sinonimos": [
+        "História do Direito I"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "direito-penal-parte-geral",
+      "nome": "Direito Penal – Parte Geral",
+      "sinonimos": [
+        "Teoria Geral do Direito Penal I",
+        "Teoria Geral do Direito Penal II",
+        "Fundamentos do Direito Penal",
+        "Teoria do Delito",
+        "Direito Penal I",
+        "Direito Penal II",
+        "Teoria do Crime",
+        "Direito Penal I (Parte Geral)"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "introducao-a-sociologia",
+      "nome": "Introdução à Sociologia",
+      "sinonimos": [
+        "Introdução à Sociologia para a Faculdade de Direito",
+        "Introdução às Ciências Sociais",
+        "Sociologia Geral"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "direito-constitucional-2",
+      "nome": "Direito Constitucional II",
+      "sinonimos": [
+        "Direito Constitucional II - A"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "direito-das-obrigacoes",
+      "nome": "Direito das Obrigações",
+      "sinonimos": [
+        "Teoria Geral das Obrigações",
+        "Direito Civil I – Obrigações",
+        "Direito Civil II (Obrigações)"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "teoria-geral-do-processo",
+      "nome": "Teoria Geral do Processo",
+      "sinonimos": [
+        "TGP"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "metodologia-juridica",
+      "nome": "Metodologia Jurídica",
+      "sinonimos": [
+        "Lógica e Metodologia Jurídica",
+        "Metodologia da Pesquisa Científica em Direito",
+        "Metodologia de Pesquisa em Direito",
+        "Metodologia da Pesquisa Jurídica",
+        "Metodologia Científica"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "sociologia-juridica",
+      "nome": "Sociologia Jurídica",
+      "sinonimos": [
+        "Sociologia do Direito - B",
+        "Sociologia do Direito"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "responsabilidade-civil",
+      "nome": "Responsabilidade Civil",
+      "sinonimos": [
+        "Fontes das Obrigações: Contratos Especiais, Atos Unilaterais, Responsabilidade Civil e Outras Fontes",
+        "Direito Civil IV – Responsabilidade"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "teoria-geral-dos-contratos",
+      "nome": "Teoria Geral dos Contratos",
+      "sinonimos": [
+        "Fontes das Obrigações: Teoria Geral dos Contratos e Contratos do Código Civil",
+        "Direito Civil II – Contratos",
+        "Contratos"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "direito-processual-civil-1",
+      "nome": "Direito Processual Civil I",
+      "sinonimos": [
+        "Direito Processual Civil I-A",
+        "Processo Civil I"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "direito-empresarial-1",
+      "nome": "Direito Empresarial I",
+      "sinonimos": [
+        "Fundamentos do Direito da Empresa e da Atividade Negocial",
+        "Direito Comercial I",
+        "Teoria Geral do Direito Empresarial"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "direito-do-trabalho-1",
+      "nome": "Direito do Trabalho I",
+      "sinonimos": [
+        "Teoria Geral do Direito do Trabalho",
+        "Direito Individual do Trabalho",
+        "Direito do Trabalho I - A"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "contratos-em-especie",
+      "nome": "Contratos em Espécie",
+      "sinonimos": [
+        "Fontes das Obrigações: Contratos Especiais, Atos Unilaterais, Responsabilidade Civil e Outras Fontes",
+        "Contratos em Espécie - A",
+        "Direito Civil III – Contratos em espécie",
+        "Contratos Especiais"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "direito-penal-parte-especial",
+      "nome": "Direito Penal – Parte Especial",
+      "sinonimos": [
+        "Direito Penal I (Parte Especial)",
+        "Direito Penal II (Parte Especial)",
+        "Crimes em Espécie",
+        "Direito Penal III",
+        "Direito Penal IV"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "direito-processual-civil-2",
+      "nome": "Direito Processual Civil II",
+      "sinonimos": [
+        "Direito Processual Civil II-A",
+        "Processo Civil II"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "direito-empresarial-2",
+      "nome": "Direito Empresarial II",
+      "sinonimos": [
+        "Fundamentos de Direito Societário",
+        "Direito Societário: Sociedades Anônimas",
+        "Direito Societário",
+        "Direito Comercial II"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "direito-do-trabalho-2",
+      "nome": "Direito do Trabalho II",
+      "sinonimos": [
+        "Direito Coletivo do Trabalho",
+        "Direito do Trabalho II - A"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "direito-internacional-publico",
+      "nome": "Direito Internacional Público",
+      "sinonimos": [
+        "Direito Internacional Público I",
+        "Direito Internacional Público II",
+        "DIP"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "direito-processual-civil-3",
+      "nome": "Direito Processual Civil III",
+      "sinonimos": [
+        "Direito Processual Civil III: Provas",
+        "Direito Processual Civil III-A",
+        "Processo Civil III"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "direito-processual-penal-1",
+      "nome": "Direito Processual Penal I",
+      "sinonimos": [
+        "Teoria do Processo Penal",
+        "Processo Penal I"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "direito-processual-do-trabalho",
+      "nome": "Direito Processual do Trabalho",
+      "sinonimos": [
+        "Direito Processual do Trabalho I",
+        "Direito Processual do Trabalho II - A",
+        "Processo do Trabalho"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "direito-financeiro",
+      "nome": "Direito Financeiro",
+      "sinonimos": [
+        "Direito Financeiro e Finanças - B"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "direito-processual-civil-4",
+      "nome": "Direito Processual Civil IV",
+      "sinonimos": [
+        "Direito Processual Civil IV - Meios de Impugnação e Execução",
+        "Processo Civil IV",
+        "Recursos e Execução"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 7,
+      "disponivel": false
+    },
+    {
+      "id": "direitos-reais",
+      "nome": "Direitos Reais",
+      "sinonimos": [
+        "Direito das Coisas I",
+        "Direito das Coisas II - A",
+        "Direito Civil V – Reais",
+        "Direito das Coisas"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 7,
+      "disponivel": false
+    },
+    {
+      "id": "direito-processual-penal-2",
+      "nome": "Direito Processual Penal II",
+      "sinonimos": [
+        "Direito Processual Penal III",
+        "Direito Processual Penal IV",
+        "Direito Processual Penal (Procedimentos e Recursos)",
+        "Processo Penal II"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 7,
+      "disponivel": false
+    },
+    {
+      "id": "direito-empresarial-3",
+      "nome": "Direito Empresarial III",
+      "sinonimos": [
+        "Fundamentos dos Contratos Empresariais e das Declarações Unilaterais da Vontade (Fundamentos dos Títulos de Crédito)",
+        "Contratos Empresariais e Títulos de Crédito em Espécie",
+        "Títulos de Crédito",
+        "Contratos Empresariais"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 7,
+      "disponivel": false
+    },
+    {
+      "id": "direito-administrativo-1",
+      "nome": "Direito Administrativo I",
+      "sinonimos": [
+        "Direito Administrativo I - A"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 7,
+      "disponivel": false
+    },
+    {
+      "id": "direito-de-familia",
+      "nome": "Direito de Família",
+      "sinonimos": [
+        "Direito Civil VI – Família"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 8,
+      "disponivel": false
+    },
+    {
+      "id": "direito-administrativo-2",
+      "nome": "Direito Administrativo II",
+      "sinonimos": [
+        "Direito Administrativo II - A",
+        "Direito Administrativo III"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 8,
+      "disponivel": false
+    },
+    {
+      "id": "direito-tributario-1",
+      "nome": "Direito Tributário I",
+      "sinonimos": [
+        "Direito Tributário I - A"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 8,
+      "disponivel": false
+    },
+    {
+      "id": "direito-previdenciario",
+      "nome": "Direito Previdenciário",
+      "sinonimos": [
+        "Seguridade Social",
+        "Direito Previdenciário - A"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 8,
+      "disponivel": false
+    },
+    {
+      "id": "direito-internacional-privado",
+      "nome": "Direito Internacional Privado",
+      "sinonimos": [
+        "Direito Internacional Privado I",
+        "Direito Internacional Privado II"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 8,
+      "disponivel": false
+    },
+    {
+      "id": "direito-economico",
+      "nome": "Direito Econômico",
+      "sinonimos": [
+        "Direito Econômico I",
+        "Direito Econômico II"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 8,
+      "disponivel": false
+    },
+    {
+      "id": "filosofia-do-direito",
+      "nome": "Filosofia do Direito",
+      "sinonimos": [
+        "Filosofia do Direito I (Parte Geral)",
+        "Filosofia do Direito - A"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 8,
+      "disponivel": false
+    },
+    {
+      "id": "direito-das-sucessoes",
+      "nome": "Direito das Sucessões",
+      "sinonimos": [
+        "Direito Civil VII – Sucessões"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 9,
+      "disponivel": false
+    },
+    {
+      "id": "direito-tributario-2",
+      "nome": "Direito Tributário II",
+      "sinonimos": [
+        "Direito Tributário II - A"
+      ],
+      "cursos": [
+        "direito"
+      ],
+      "semestre_tipico": 9,
       "disponivel": false
     },
     {
       "id": "historia-da-psicologia",
       "nome": "História da Psicologia",
       "sinonimos": [
-        "História e Sistemas em Psicologia",
-        "Fundamentos Históricos da Psicologia"
+        "História e Filosofia da Psicologia",
+        "História da Psicologia - B",
+        "História das Ideias Psicológicas",
+        "História e Sistemas da Psicologia"
       ],
       "cursos": [
         "psicologia"
@@ -95,11 +1078,57 @@
       "disponivel": false
     },
     {
-      "id": "psicologia-do-desenvolvimento-1",
-      "nome": "Psicologia do Desenvolvimento I",
+      "id": "filosofia-e-epistemologia",
+      "nome": "Filosofia e Epistemologia",
       "sinonimos": [
-        "Psicologia do Desenvolvimento",
-        "Desenvolvimento Humano I"
+        "Epistemologia das Ciências Humanas",
+        "Psicologia e Filosofia",
+        "Introdução à Filosofia: Filosofia da Ciência e Epistemologia",
+        "Filosofia da Ciência",
+        "Epistemologia"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "processos-psicologicos-basicos",
+      "nome": "Processos Psicológicos Básicos",
+      "sinonimos": [
+        "Motivação e Emoção",
+        "Processos Psicológicos Básicos I",
+        "PPB"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "sociologia",
+      "nome": "Sociologia",
+      "sinonimos": [
+        "Sociologia da Saúde",
+        "Fundamentos de Análise Sociológica",
+        "Sociologia Geral"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 1,
+      "disponivel": false
+    },
+    {
+      "id": "neuroanatomia",
+      "nome": "Neuroanatomia",
+      "sinonimos": [
+        "Neuroanatomia Funcional Aplicada à Psicologia",
+        "Anatomia aplicada à Psicologia",
+        "Anatomia",
+        "Bases Biológicas do Comportamento"
       ],
       "cursos": [
         "psicologia"
@@ -108,16 +1137,348 @@
       "disponivel": false
     },
     {
+      "id": "estatistica-aplicada-a-psicologia",
+      "nome": "Estatística Aplicada à Psicologia",
+      "sinonimos": [
+        "Noções de Estatística",
+        "Métodos Quantitativos em Psicologia",
+        "Estatística",
+        "Psicoestatística"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "metodos-de-pesquisa-em-psicologia",
+      "nome": "Métodos de Pesquisa em Psicologia",
+      "sinonimos": [
+        "Pesquisa em Psicologia - B",
+        "Métodos Qualitativos em Psicologia",
+        "Metodologia Científica",
+        "Pesquisa em Psicologia"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "antropologia",
+      "nome": "Antropologia",
+      "sinonimos": [
+        "Introdução à Antropologia",
+        "Antropologia Cultural"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "psicanalise-1",
+      "nome": "Psicanálise I",
+      "sinonimos": [
+        "Introdução à Psicanálise: Freud",
+        "Constituição do Sujeito Psíquico",
+        "Teorias Psicanalíticas",
+        "Introdução à Psicanálise"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 2,
+      "disponivel": false
+    },
+    {
+      "id": "psicofisiologia",
+      "nome": "Psicofisiologia",
+      "sinonimos": [
+        "Fisiologia Geral Aplicada à Psicologia",
+        "Neurofisiologia",
+        "Fisiologia"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "analise-experimental-do-comportamento",
+      "nome": "Análise Experimental do Comportamento",
+      "sinonimos": [
+        "Análise Experimental do Comportamento I - Processos Básicos",
+        "Análise Experimental do Comportamento II - Processos Complexos no Ser Humano",
+        "Análise Experimental do Comportamento II",
+        "AEC",
+        "Análise do Comportamento",
+        "Psicologia Experimental"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "psicologia-do-desenvolvimento-1",
+      "nome": "Psicologia do Desenvolvimento I",
+      "sinonimos": [
+        "Desenvolvimento Humano I - A",
+        "Desenvolvimento Humano I"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "psicologia-social-1",
+      "nome": "Psicologia Social I",
+      "sinonimos": [
+        "Psicologia Social I - B"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "teorias-da-personalidade",
+      "nome": "Teorias da Personalidade",
+      "sinonimos": [
+        "Psicologia da Personalidade: Fundamentos",
+        "Psicologia da Personalidade"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
       "id": "psicopatologia-1",
       "nome": "Psicopatologia I",
       "sinonimos": [
-        "Psicopatologia",
+        "Introdução à Psicopatologia",
+        "Psicopatologia I-A",
+        "Psicopatologia Geral I",
         "Psicopatologia Geral"
       ],
       "cursos": [
         "psicologia"
       ],
+      "semestre_tipico": 3,
+      "disponivel": false
+    },
+    {
+      "id": "psicologia-do-desenvolvimento-2",
+      "nome": "Psicologia do Desenvolvimento II",
+      "sinonimos": [
+        "Desenvolvimento Humano II - A",
+        "Desenvolvimento Humano II"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "psicologia-social-2",
+      "nome": "Psicologia Social II",
+      "sinonimos": [
+        "Psicologia Social II - B"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "psicanalise-2",
+      "nome": "Psicanálise II",
+      "sinonimos": [
+        "Psicanálise: Klein, Bion e Winnicott",
+        "Psicanálise: Lacan"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "avaliacao-psicologica-1",
+      "nome": "Avaliação Psicológica I",
+      "sinonimos": [
+        "Fundamentos da Avaliação Psicológica",
+        "Técnicas de Exame Psicológico I",
+        "Psicometria"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 4,
+      "disponivel": false
+    },
+    {
+      "id": "avaliacao-psicologica-2",
+      "nome": "Avaliação Psicológica II",
+      "sinonimos": [
+        "Avaliação da Inteligência",
+        "Técnicas de Exame Psicológico II",
+        "Testes Psicológicos"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
       "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "psicopatologia-2",
+      "nome": "Psicopatologia II",
+      "sinonimos": [
+        "Psicopatologia II - A",
+        "Psicopatologia Geral II"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "psicologia-escolar",
+      "nome": "Psicologia Escolar e Educacional",
+      "sinonimos": [
+        "Psicologia e Educação",
+        "Sujeito, Educação e Sociedade",
+        "Psicologia Escolar",
+        "Psicologia da Educação",
+        "Psicologia Educacional"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "processos-grupais",
+      "nome": "Processos Grupais",
+      "sinonimos": [
+        "Processos Grupais I",
+        "Dinâmica de Grupo"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "introducao-a-psicologia-clinica",
+      "nome": "Introdução à Psicologia Clínica",
+      "sinonimos": [
+        "Introdução à Psicologia Clínica: História e Fundamentos",
+        "Psicologia Clínica"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 5,
+      "disponivel": false
+    },
+    {
+      "id": "psicologia-organizacional-e-do-trabalho",
+      "nome": "Psicologia Organizacional e do Trabalho",
+      "sinonimos": [
+        "Psicologia Social do Trabalho e das Organizações",
+        "Psicologia e Trabalho",
+        "Psicologia do Trabalho",
+        "Psicologia Organizacional"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "psicologia-institucional",
+      "nome": "Psicologia Institucional",
+      "sinonimos": [
+        "Processos Institucionais"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "psicodiagnostico",
+      "nome": "Psicodiagnóstico",
+      "sinonimos": [
+        "Atendimento Clínico: o Processo Diagnóstico",
+        "Método Clínico e Diagnóstico I",
+        "Processo Diagnóstico"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "teorias-e-tecnicas-psicoterapicas",
+      "nome": "Teorias e Técnicas Psicoterápicas",
+      "sinonimos": [
+        "Terapias Comportamentais",
+        "Introdução à Psicoterapia",
+        "Psicoterapia"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "psicologia-cognitiva",
+      "nome": "Psicologia Cognitiva",
+      "sinonimos": [
+        "Percepção e Cognição",
+        "Linguagem e Pensamento",
+        "Cognição"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 6,
+      "disponivel": false
+    },
+    {
+      "id": "etica-profissional",
+      "nome": "Ética Profissional",
+      "sinonimos": [
+        "Ética Profissional I",
+        "Ética em Psicologia"
+      ],
+      "cursos": [
+        "psicologia"
+      ],
+      "semestre_tipico": 6,
       "disponivel": false
     }
   ]

@@ -1,10 +1,10 @@
 {
-  "versao_catalogo": "0.0.1",
-  "gerado_em": "2026-09-29",
+  "versao_catalogo": "0.1.0",
+  "gerado_em": "2026-09-30",
   "versao_pipeline": "0.0.0",
-  "observacao": "Catálogo semente do piloto (3 disciplinas por curso). Nomes, sinônimos e semestres típicos são estimativas e serão substituídos pela matriz canônica da etapa E3. Nenhuma trilha publicada ainda.",
+  "observacao": "Catálogo montado a partir das grades curriculares de USP, UFRGS e UFMG (versões 2025/2026). Inclui as disciplinas obrigatórias presentes em pelo menos duas das três grades; o semestre típico é a mediana entre elas. Nenhuma trilha publicada ainda.",
   "contagens": {
-    "disciplinas_no_indice": 9,
+    "disciplinas_no_indice": 105,
     "trilhas_publicadas": 0,
     "carreiras_publicadas": 0
   }

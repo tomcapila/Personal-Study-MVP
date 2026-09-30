@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom'
 import { Carregando } from '../components'
 import { api, useDados } from '../lib/data'
+import type { Curso } from '../lib/types'
+
+function contar(c: Curso): string {
+  const n = c.semestres.reduce((t, s) => t + s.disciplinas.length, 0)
+  return `${n} disciplinas`
+}
 
 export default function Inicio() {
   const cursos = useDados(api.cursos, [])
@@ -26,6 +32,7 @@ export default function Inicio() {
               <Link key={c.id} to={`/curso/${c.id}`} className="cartao">
                 <strong>{c.nome}</strong>
                 <span>{c.descricao}</span>
+                <span className="contagem">{contar(c)}</span>
               </Link>
             ))}
           </div>

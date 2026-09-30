@@ -26,6 +26,13 @@ function EmPreparacao({ item }: { item: ItemIndice }) {
     <>
       <p className="migalha"><Link to={`/curso/${item.cursos[0]}`}>Voltar ao curso</Link></p>
       <h1>{item.nome}</h1>
+      <p className="suave">Semestre típico: {item.semestre_tipico}º</p>
+      {item.sinonimos.length > 0 && (
+        <p>
+          <span className="suave">Também aparece nas grades como: </span>
+          {item.sinonimos.join('; ')}.
+        </p>
+      )}
       <p>A trilha desta disciplina ainda está sendo preparada e revisada.</p>
       {link && (
         <p>

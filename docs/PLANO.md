@@ -17,7 +17,7 @@ Base: `mvp_github_pages.md` v0.1 (29/09/2026). Este arquivo acompanha o que já 
 
 | Semana | Entrega | Situação |
 |---|---|---|
-| 1 | Coletar PPCs, matriz canônica inicial, golden set, lista de domínios, chaves de API | **Pendente (manual).** Catálogo semente com 9 disciplinas do piloto em `public/data`; nomes, sinônimos e semestres são estimativas a substituir pela etapa E3 |
+| 1 | Coletar PPCs, matriz canônica inicial, golden set, lista de domínios, chaves de API | **Grades coletadas** (USP, UFRGS e UFMG nos três cursos). Catálogo de 105 disciplinas em `public/data`, montado à mão a partir delas (ver `docs/CATALOGO.md`); a matriz da etapa E3 o substitui. Falta golden set e chaves de API |
 | 2 | Pipeline E1 a E6 | **Código pronto e testado** (sem chamadas reais), no repositório privado `study-assistant-pipeline` |
 | 3 | Pipeline E7 a E10, piloto com 9 disciplinas | **Código pronto e testado** (sem chamadas reais). A exportação passou no validador deste site. Falta o piloto real |
 | 4 | Site: telas, schema, workflows, deploy | **Feito**, faltando a primeira publicação com trilhas reais |
