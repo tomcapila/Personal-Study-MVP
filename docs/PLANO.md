@@ -18,7 +18,7 @@ Base: `mvp_github_pages.md` v0.1 (29/09/2026). Este arquivo acompanha o que já 
 | Semana | Entrega | Situação |
 |---|---|---|
 | 1 | Coletar PPCs, matriz canônica inicial, golden set, lista de domínios, chaves de API | **Pendente (manual).** Catálogo semente com 9 disciplinas do piloto em `public/data`; nomes, sinônimos e semestres são estimativas a substituir pela etapa E3 |
-| 2 | Pipeline E1 a E6 | **Pendente.** Depende do repositório privado |
+| 2 | Pipeline E1 a E6 | **Código pronto e testado** (sem chamadas reais). Vai para o repositório privado `study-assistant-pipeline` quando ele for criado |
 | 3 | Pipeline E7 a E10, piloto com 9 disciplinas | Pendente |
 | 4 | Site: telas, schema, workflows, deploy | **Feito**, faltando a primeira publicação com trilhas reais |
 | 5 | Geração completa e moderação | Pendente |
