@@ -18,8 +18,8 @@ Base: `mvp_github_pages.md` v0.1 (29/09/2026). Este arquivo acompanha o que já 
 | Semana | Entrega | Situação |
 |---|---|---|
 | 1 | Coletar PPCs, matriz canônica inicial, golden set, lista de domínios, chaves de API | **Pendente (manual).** Catálogo semente com 9 disciplinas do piloto em `public/data`; nomes, sinônimos e semestres são estimativas a substituir pela etapa E3 |
-| 2 | Pipeline E1 a E6 | **Código pronto e testado** (sem chamadas reais). Vai para o repositório privado `study-assistant-pipeline` quando ele for criado |
-| 3 | Pipeline E7 a E10, piloto com 9 disciplinas | Pendente |
+| 2 | Pipeline E1 a E6 | **Código pronto e testado** (sem chamadas reais), no repositório privado `study-assistant-pipeline` |
+| 3 | Pipeline E7 a E10, piloto com 9 disciplinas | **Código pronto e testado** (sem chamadas reais). A exportação passou no validador deste site. Falta o piloto real |
 | 4 | Site: telas, schema, workflows, deploy | **Feito**, faltando a primeira publicação com trilhas reais |
 | 5 | Geração completa e moderação | Pendente |
 | 6 | Lançamento | Pendente |
@@ -39,8 +39,9 @@ Base: `mvp_github_pages.md` v0.1 (29/09/2026). Este arquivo acompanha o que já 
 1. Ativar o Pages com source "GitHub Actions" e proteger a `main` (ver README).
 2. Criar os formulários de ementa e de avaliação (Tally ou Google Forms) e cadastrar os links como variáveis do repositório.
 3. Definir um contato para pedidos de exclusão (variável `CONTATO`).
-4. Criar o repositório privado do pipeline e as chaves de API (Claude, OpenAlex, Semantic Scholar, YouTube, Tavily), guardadas só no `.env` local.
-5. Coletar de 3 a 5 PPCs por curso e escolher o golden set (5 disciplinas por curso).
+4. Criar a branch `main` deste repositório (merge da branch de trabalho), que é a base dos PRs do pipeline.
+5. Criar as chaves de API (Claude, OpenAlex, Semantic Scholar, YouTube, Tavily), guardadas só no `.env` local do pipeline.
+6. Coletar de 3 a 5 PPCs por curso e escolher o golden set (5 disciplinas por curso).
 
 ## A conferir
 
